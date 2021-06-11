@@ -96,6 +96,20 @@ export async function getTokensPrice(
     (obj, result: any) => ({ ...obj, ...result }),
     {}
   );
+
+  prices['0xaFF4481D10270F50f203E0763e2597776068CBc5'] = {
+    usd: 1,
+    usd_24h_change: -0.03
+  };
+  prices['0xD1553ef84fF9e71165B4BcC70eEBFBBdd49D0Cb4'] = {
+    usd: 2,
+    usd_24h_change: 0.5
+  };
+  prices['0x5d6e3d7632D6719e04cA162be652164Bec1EaA6b'] = {
+    usd: 3,
+    usd_24h_change: -0.07
+  };
+
   return Object.fromEntries(
     Object.entries(prices).map((token: any) => [
       getOriginalAddress(chainId, token[0]),
