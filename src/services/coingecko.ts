@@ -97,17 +97,15 @@ export async function getTokensPrice(
     {}
   );
 
-  prices['0xaFF4481D10270F50f203E0763e2597776068CBc5'] = {
+  // USDC
+  prices['0xB0A8608F84DBFff504F12dBded6eAc04473a0305'] = {
     usd: 1,
     usd_24h_change: -0.03
   };
-  prices['0xD1553ef84fF9e71165B4BcC70eEBFBBdd49D0Cb4'] = {
-    usd: 2,
-    usd_24h_change: 0.5
-  };
-  prices['0x5d6e3d7632D6719e04cA162be652164Bec1EaA6b'] = {
+  // FLT
+  prices['0xf4dd350d1153cd2eda97f8934f21c1d61ac1feed'] = {
     usd: 3,
-    usd_24h_change: -0.07
+    usd_24h_change: 0.5
   };
 
   return Object.fromEntries(
